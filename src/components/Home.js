@@ -23,8 +23,10 @@ const socialLinks = [
                   Jayaram <span className="shape-mark">Akula</span>
                 </h2>
                 <p>UI/UX Designer specializing in Shopify &amp; Webflow.</p>
-
-                <a href="#" className="btn btn-xl btn-outline-one icon-space-left">
+                
+                
+                {/* add  functionality of download resume when user clicks of get resume button  */}
+                <a href="https://docs.google.com/document/d/1KRsRSU1oO9YL-Gu-bvvG8mya5Zti9Feb/edit?usp=sharing&ouid=117448052213297476196&rtpof=true&sd=true" className="btn btn-xl btn-outline-one icon-space-left">
                   Get Resume <i className="icofont-download"></i>
                 </a>
 
