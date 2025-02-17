@@ -1,0 +1,138 @@
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Heading and Description */
+.services-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.services-description {
+  font-size: 18px;
+  color: #858792;;
+  margin-bottom: 30px;
+}
+
+/* Carousel Wrapper */
+.services-slider {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Service Cards */
+.service-card {
+  background: #252734;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Icons */
+.icon {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Card Title */
+h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+/* List Items */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 5px;
+}
+
+/* Slick Slider Customization */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list {
+  padding: 20px 0 !important;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-slider {
+    width: 95%;
+  }
+
+  .service-card {
+    max-width: 300px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-slider {
+    width: 100%;
+  }
+
+  .service-card {
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .icon {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    max-width: 260px;
+    padding: 18px;
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+}

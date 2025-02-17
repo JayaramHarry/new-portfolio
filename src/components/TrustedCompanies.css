@@ -1,0 +1,53 @@
+/* Trusted Companies Section */
+.trusted-companies-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #1e1e2e;
+}
+.trusted-para{
+  color: #858792;
+  
+}
+/* Section Heading */
+.trusted-heading {
+  font-size: 2.5rem; /* Increased size for a more prominent heading */
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Slider Wrapper */
+.companies-slider {
+  max-width: 100%; /* Increased width to fit larger logos */
+  margin: 0 auto;
+}
+
+/* Company Card */
+.company-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px; /* Increased padding for a more spacious layout */
+  background: #1e1e2e;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.company-card:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Company Logo */
+.company-logo {
+  width: 120px; /* Increased logo size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Company Name */
+.company-name {
+  font-size: 1.4rem; /* Increased font size */
+  font-weight: bold;
+  color: #444;
+}
