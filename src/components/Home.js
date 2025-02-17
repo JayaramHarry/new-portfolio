@@ -47,7 +47,7 @@ const socialLinks = [
         
         <div className="hero-portrait">
           <div className="image">
-            <img className="img-fluid" src="/profile-pic-1.png" alt="Portrait" />
+            <img className="img-fluid" src="/new-portfolio/profile-pic-1.png" alt="Portrait" />
 
             <div className="image-half-round-shape"></div>
 
