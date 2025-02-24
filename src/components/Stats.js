@@ -3,8 +3,8 @@ import "./Stats.css";
 
 const statsData = [
   { title: "Clients", count: 50, suffix: "+" },
-  { title: "Projects Completed", count: 120, suffix: "+" },
-  { title: "Years of Experience", count: 5, suffix: "+" },
+  { title: "Projects Completed", count: 160, suffix: "+" },
+  { title: "Years of Experience", count: 4, suffix: "+" },
 ];
 
 const Stats = () => {

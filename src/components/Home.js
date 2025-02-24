@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaXTwitter, } from "react-icons/fa6";
 import "./Home.css";
 
 
@@ -10,7 +11,7 @@ const socialLinks = [
   { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/jayaram-akula-3178bb241/" },
     { icon: <FaGithub />, link: "https://github.com/JayaramHarry" },
     { icon: <FaInstagram />, link: "https://www.instagram.com/harry__jay_/#" },
-    { icon: <FaFacebookF />, link: "https://www.facebook.com/profile.php?id=100008507824239" },
+    { icon: <FaXTwitter />, link: "https://twitter.com" },
 ];
 
   return (
@@ -20,15 +21,19 @@ const socialLinks = [
               <div className="hero-content">
                 <h3 className="title-big">Hello! I’m</h3>
                 <h2 className="title-large">
-                  Jayaram <span className="shape-mark">Akula</span>
+                  <span className="shape-mark">Jayaram</span> Akula
                 </h2>
-                <p>UI/UX Designer specializing in Shopify &amp; Webflow.</p>
+                <p>Transforming ideas into functional and engaging digital experiences as a Full-Stack Developer.</p>
                 
                 
                 {/* add  functionality of download resume when user clicks of get resume button  */}
-                <a href="https://docs.google.com/document/d/1KRsRSU1oO9YL-Gu-bvvG8mya5Zti9Feb/edit?usp=sharing&ouid=117448052213297476196&rtpof=true&sd=true" className="btn btn-xl btn-outline-one icon-space-left">
+                <a href="https://docs.google.com/document/d/1siHTiWsXucNORKiyI1lPj3b0Vq3HXXRX/export?format=pdf" 
+                  className="btn btn-xl btn-outline-one icon-space-left" 
+                  download="Resume.pdf"
+                >
                   Get Resume <i className="icofont-download"></i>
                 </a>
+
 
                 <div className="video-link">
                   <a
@@ -67,6 +72,7 @@ const socialLinks = [
             </div>
           </div>
         </div>
+        
       </div>
       {/* I added below code from 139 line */}
       <div className="hero-shape hero-top-shape">

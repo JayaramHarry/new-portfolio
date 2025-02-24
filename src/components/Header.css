@@ -1,12 +1,11 @@
+
 /* Header Section */
 .header-section {
   position: fixed;
-  /* position: sticky; */
   top: 0;
   width: 100%;
   z-index: 1000;
   background: #2a2c39;
-  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
   padding: 15px 0;
 }
 
@@ -15,21 +14,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 20px;
 }
 
 /* Logo */
-.header-logo  {
+.header-logo {
   max-height: 50px;
-  /* border: 1px solid #858792;
-  padding: 5px 10px; */
 }
 
 /* Navigation Menu */
 .header-nav {
-  
   list-style: none;
   padding: 0;
   margin: 0;
@@ -98,10 +93,6 @@
 }
 
 /* Header Button */
-.header-btn-link {
-  text-align: right;
-}
-
 .header-btn-link .btn {
   display: inline-block;
   padding: 8px 20px;
@@ -119,25 +110,58 @@
   transform: scale(1.05);
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger .bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger .bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
 /* Responsive Styles */
 @media screen and (max-width: 992px) {
-  .header-section {
-    padding: 10px 0;
+  .hamburger {
+    display: flex;
   }
 
-  .header-wrapper {
-    flex-direction: column;
-  }
-
-  .header-nav {
-    display: none; /* Hide on smaller screens */
+  .nav-menu {
+    display: none;
     flex-direction: column;
     width: 100%;
-    background: #fff;
+    background: #2a2c39;
     position: absolute;
     top: 60px;
     left: 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    width: 100%;
   }
 
   .header-nav li {
@@ -152,5 +176,9 @@
 
   .header-btn-link {
     margin-top: 10px;
+    text-align: center;
+    display: none;
   }
+
+
 }

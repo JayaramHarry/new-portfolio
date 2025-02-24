@@ -21,8 +21,8 @@ function App() {
         <section id="skills"><Skills /></section>
         <section id="stats"><Stats /></section>
         <section id="projects"><Projects /></section>
-        <section id="testimonials"><Testimonials /></section>
-        <section id="trusted-companies"><TrustedCompanies /></section>
+        {/* <section id="testimonials"><Testimonials /></section> */}
+        {/* <section id="trusted-companies"><TrustedCompanies /></section> */}
         <section id="contact"><Contact /></section>
       </div>
       

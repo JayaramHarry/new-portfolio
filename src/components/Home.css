@@ -156,8 +156,97 @@
   bottom: 158px;
 }
 
+/* ---------------------------------------------- */
 /* Responsive Design */
+/* ---------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-portrait {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .title-big {
+    font-size: 60px;
+  }
+
+  .title-large {
+    font-size: 65px;
+  }
+  .hero-portrait .image img{
+    max-width: 400px;
+  }
+  /* Adjust Shape Size */
+  .hero-portrait .image-half-round-shape {
+    width: 280px;
+    height: 400px;
+    border-top-right-radius: 280px;
+    border-bottom-right-radius: 280px;
+  }
+
+  .hero-portrait .image-half-round-shape::before {
+    width: 320px;
+    height: 350px;
+    display: none;
+  }
+
+  .hero-portrait .image-half-round-shape::after {
+    width: 450px;
+    height: 500px;
+    display: none;
+  }
+
+  /* Adjusting Social Media Icons */
+  .social-link {
+    right: -40px;
+    top: 12%;
+  }
+
+  .social-link :nth-child(1) {
+    top: 0px;
+    right: 5px;
+  }
+
+  .social-link :nth-child(2) {
+    top: 70px;
+    right: -15px;
+  }
+
+  .social-link :nth-child(3) {
+    top: 150px;
+    right: -30px;
+  }
+
+  .social-link :nth-child(4) {
+    top: 230px;
+    right: -15px;
+  }
+}
+/* max-width - 768px -----------------------------------------*/
 @media (max-width: 768px) {
+  .hero-portrait{
+    width: 80%;
+  }
+  .hero-portrait .image img {
+    max-width: 280px;
+  }
+  .title-big {
+    font-size: 50px;
+  }
+
+  .title-large {
+    font-size: 55px;
+  }
   .hero-portrait .image-half-round-shape {
     width: 250px;
     height: 350px;
@@ -198,150 +287,18 @@
     left: 75%;
     top: 150px;
   }
-}
-
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> fa02e5bae0dd0ea011eae1aa05212525b68fe6d7
-/* ---------------------------------------------- */
-/* Responsive Design */
-/* ---------------------------------------------- */
-
-@media (max-width: 1024px) {
-  .hero-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .container-heading {
-    width: 100%;
-    text-align: center;
-  }
+    order: 1;
 
-  .hero-portrait {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  .title-big {
-    font-size: 60px;
-  }
-
-  .title-large {
-    font-size: 65px;
-  }
-
-  /* Adjust Shape Size */
-  .hero-portrait .image-half-round-shape {
-    width: 280px;
-    height: 400px;
-    border-top-right-radius: 280px;
-    border-bottom-right-radius: 280px;
-  }
-
-  .hero-portrait .image-half-round-shape::before {
-    width: 320px;
-    height: 350px;
-  }
-
-  .hero-portrait .image-half-round-shape::after {
-    width: 450px;
-    height: 500px;
-  }
-
-  /* Adjusting Social Media Icons */
-  .social-link {
-    right: -40px;
-    top: 12%;
-  }
-
-  .social-link :nth-child(1) {
-    top: 0px;
-    right: 5px;
-  }
-
-  .social-link :nth-child(2) {
-    top: 70px;
-    right: -15px;
-  }
-
-  .social-link :nth-child(3) {
-    top: 150px;
-    right: -30px;
-  }
-
-  .social-link :nth-child(4) {
-    top: 230px;
-    right: -15px;
   }
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 30px;
-  }
-
-  .title-big {
-    font-size: 50px;
-  }
-
-  .title-large {
-    font-size: 55px;
-  }
-
-  .hero-portrait .image-half-round-shape {
-    width: 250px;
-    height: 350px;
-    border-top-right-radius: 250px;
-    border-bottom-right-radius: 250px;
-  }
-
-  .hero-portrait .image-half-round-shape::before {
-    width: 280px;
-    height: 300px;
-  }
-
-  .hero-portrait .image-half-round-shape::after {
-    width: 400px;
-    height: 500px;
-  }
-
-  .social-link {
-    right: -30px;
-    top: 10%;
-  }
-
-  .social-link a {
-    font-size: 18px;
-    width: 35px;
-    height: 35px;
-  }
-
-  .social-link :nth-child(1) {
-    top: 0px;
-    right: 3px;
-  }
-
-  .social-link :nth-child(2) {
-    top: 60px;
-    right: -10px;
-  }
-
-  .social-link :nth-child(3) {
-    top: 130px;
-    right: -25px;
-  }
-
-  .social-link :nth-child(4) {
-    top: 200px;
-    right: -10px;
-  }
-}
+/* max-width 480px----------------------------------------- */
 
 @media (max-width: 480px) {
+  .hero-portrait .image img {
+    max-width: 250px;
+  }
   .hero-section {
     padding: 20px;
   }
@@ -355,10 +312,12 @@
   }
 
   .hero-portrait .image-half-round-shape {
-    width: 200px;
-    height: 280px;
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
+         width: 160px;
+        height: 300px;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+        top: 43px;
+        left: 352px;
   }
 
   .social-link {
@@ -390,5 +349,33 @@
   .social-link :nth-child(4) {
     top: 170px;
     right: -8px;
+  }
+}
+
+
+
+
+/* extra responsiveness for icon over different screen sizes------------ */
+
+@media (min-width: 481px) and (max-width: 750px) {
+  .hero-portrait .image-half-round-shape {
+    width: 280px;
+    height: 315px;
+    border-top-right-radius: 280px;
+    border-bottom-right-radius: 280px;
+    left: calc(80% - -133px);
+    transform: translateX(-90%);
+  }
+
+  .hero-portrait .image-half-round-shape::before {
+    width: 320px;
+    height: 350px;
+    left: -90px;
+  }
+
+  .hero-portrait .image-half-round-shape::after {
+    width: 450px;
+    height: 500px;
+    left: -70px;
   }
 }
